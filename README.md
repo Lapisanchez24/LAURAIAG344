@@ -21,3 +21,11 @@ git push -u origin main
 git push -u origin master
 
 ```
+## Comandos HTML
+![alt text](image-4.png)
+```
+alt+ shift + A --Para comentarios
+alt+ shift + flecha hacia abajo --Para duplicar
+Li*3 -- hace 3 items de lista
+ctrl + shift + k-- para eliminar una línea
+```
