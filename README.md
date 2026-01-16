@@ -29,3 +29,8 @@ alt+ shift + flecha hacia abajo --Para duplicar
 Li*3 -- hace 3 items de lista
 ctrl + shift + k-- para eliminar una línea
 ```
+# Comandos CDM
+
+python.exe -m pip install --upgrade
+pip install pytest
+pip list

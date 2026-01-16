@@ -1,0 +1,44 @@
+/* Estilo para toda la web */
+
+/* *{ margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} */
+
+/* Estilo Header */
+
+.header {
+    background-color: #1349bd; /* Color de fondo del encabezado */
+    padding: 20px; /* Espaciado interno */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Color del texto */
+    margin: 0;
+    padding: 16px 24px; /* Espaciado interno */
+    display: flex; /* Logo y menú en fila */
+    align-items: center; /* Alineación vertical */
+    justify-content: space-between; /* Espacio entre logo y menú */
+}
+
+/* Estilo título */
+.nombre {
+    font-size: 36px; /* Tamaño de la letra en pixels */
+}
+
+/* Enlaces del menú */
+.nav-link {
+    color: #ffffff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    margin-left: 12px; /* Espaciado entre enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    opacity: 0.8; /* Efecto de opacidad al pasar el ratón */
+    background-color: #96d9f3; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 4px 8px; /* Espaciado interno */
+}
+
+
