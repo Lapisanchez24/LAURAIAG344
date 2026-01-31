@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ================= META ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= TITLE ================= -->
+    <title>Registro de Máquina | Energy AI Platform</title>
+
+    <!-- ================= SEO ================= -->
+    <meta name="description" content="Registro único de máquinas industriales. Energy AI Platform - Sistema inteligente de gestión energética para PYMES.">
+    <meta name="keywords" content="energía, industria 4.0, SCADA, gestión energética, IA, máquinas industriales, energy management system">
+    <meta name="author" content="Energy AI Platform">
+
+    <!-- ================= ICON ================= -->
+    <link rel="icon" href="/static/favicon.ico">
+
+    <!-- ================= STYLES ================= -->
+    <!-- Estilo global -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Estilo exclusivo de esta vista -->
+    <link rel="stylesheet" href="/static/css/machine.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="logo">⚡ Energy AI Platform</div>
+    <ul class="menu">
+        <li><a href="/">🏠 Inicio</a></li>
+        <li><a href="/machine">🏭 Registro Máquina</a></li>
+        <li><a href="/realtime">⚡ Tiempo Real</a></li>
+        <li><a href="/graph">📊 Gráficas</a></li>
+        <li><a href="/alerts">🚨 Alarmas</a></li>
+    </ul>
+</nav>
+
+<!-- ================= PANEL PRINCIPAL ================= -->
+<section class="panel">
+
+    <h2>Registro Único de Máquina Industrial</h2>
+    <p>Estos datos se registran una sola vez por máquina. Información sensible protegida.</p>
+
+    <!-- ================= FORMULARIO ================= -->
+    <div class="form-grid">
+
+        <input id="codigo" placeholder="Código Interno">
+        <input id="modelo" placeholder="Modelo">
+        <input id="tipo" placeholder="Tipo de Máquina">
+
+        <input id="pkw" placeholder="Potencia (kW)" type="number">
+        <input id="php" placeholder="Potencia (HP)" type="number">
+
+        <input id="voltaje" placeholder="Voltaje (V)" type="number">
+        <input id="fases" placeholder="Fases">
+        <input id="frecuencia" placeholder="Frecuencia (Hz)" type="number">
+
+        <input id="corriente" placeholder="Corriente (A)" type="number">
+        <input id="fp" placeholder="Factor de Potencia">
+        <input id="eficiencia" placeholder="Eficiencia (%)" type="number">
+
+        <input id="anio" placeholder="Año de Fabricación" type="number">
+        <input id="horas" placeholder="Horas Diarias" type="number">
+
+        <input id="ubicacion" placeholder="Ubicación">
+        <input id="estado" placeholder="Estado">
+
+        <input id="instalacion" type="date" placeholder="Fecha Instalación">
+        <input id="mantenimiento" type="date" placeholder="Fecha Último Mantenimiento">
+
+        <textarea id="obs" placeholder="Observaciones"></textarea>
+
+    </div>
+
+    <!-- ================= BOTÓN GUARDAR ================= -->
+    <button onclick="saveMachine()" class="main-btn">💾 Guardar Máquina</button>
+
+    <hr>
+
+    <!-- ================= ZONA PROTEGIDA ================= -->
+    <h3>Eliminar Registro (Protegido)</h3>
+    <p>⚠️ Esta acción requiere clave de seguridad</p>
+
+    <input type="password" id="deleteKey" placeholder="Clave de seguridad">
+    <button onclick="deleteMachine()" class="danger-btn">🗑 Eliminar Máquina</button>
+
+</section>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>

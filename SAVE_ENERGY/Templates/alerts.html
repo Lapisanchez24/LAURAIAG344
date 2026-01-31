@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alarmas - SAVE ENERGY</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#0f172a;
+            color:white;
+            text-align:center;
+        }
+        .alarm{
+            background:red;
+            padding:20px;
+            margin:20px;
+            border-radius:10px;
+            font-size:20px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink{
+            0%{opacity:1;}
+            50%{opacity:0.4;}
+            100%{opacity:1;}
+        }
+    </style>
+</head>
+<body>
+
+<h1>🚨 SISTEMA DE ALARMAS</h1>
+
+<div id="alarms"></div>
+
+<script>
+fetch('/api/alerts')
+.then(r => r.json())
+.then(data => {
+    let div = document.getElementById("alarms");
+    if(data.length === 0){
+        div.innerHTML = "<h2>✅ Sin alarmas activas</h2>";
+    }else{
+        data.forEach(a=>{
+            div.innerHTML += `
+                <div class="alarm">
+                    ⚠️ ${a.reason}<br>
+                    Potencia: ${a.power}<br>
+                    Fecha: ${a.date} ${a.time}
+                </div>
+            `;
+        })
+    }
+})
+</script>
+
+</body>
+</html>

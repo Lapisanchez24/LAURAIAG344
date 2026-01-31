@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar Máquinas | Energy AI Platform</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/css/machine.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">⚡ Energy AI Platform</div>
+    <ul class="menu">
+        <li><a href="/">🏠 Inicio</a></li>
+        <li><a href="/machine">🏭 Registro Máquina</a></li>
+        <li><a href="/verify">🔍 Verificar Máquina</a></li>
+        <li><a href="/realtime">⚡ Tiempo Real</a></li>
+        <li><a href="/graph">📊 Gráficas</a></li>
+        <li><a href="/alerts">🚨 Alarmas</a></li>
+    </ul>
+</nav>
+
+<section class="panel">
+
+    <h2>🔎 Verificación de Máquinas Registradas</h2>
+    <p>Busca una máquina por código interno o por nombre/modelo.</p>
+
+    <div class="form-grid">
+
+        <input id="search_code" placeholder="Buscar por Código Interno">
+        <input id="search_model" placeholder="Buscar por Nombre / Modelo">
+
+    </div>
+
+    <button onclick="searchMachine()" class="main-btn">🔍 Buscar</button>
+
+    <hr>
+
+    <h3>📄 Resultado</h3>
+
+    <div id="result" style="margin-top:20px;"></div>
+
+</section>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

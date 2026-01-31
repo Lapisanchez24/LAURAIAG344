@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Eliminar Máquinas | Energy AI Platform</title>
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/css/machine.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">⚡ Energy AI Platform</div>
+    <ul class="menu">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/machine">Registro Máquina</a></li>
+        <li><a href="/verify">Verificar Máquina</a></li>
+        <li><a href="/delete">Eliminar Máquina</a></li>
+        <li><a href="/realtime">Tiempo Real</a></li>
+        <li><a href="/graph">Gráficas</a></li>
+        <li><a href="/alerts">Alarmas</a></li>
+    </ul>
+</nav>
+
+<section class="panel">
+
+    <h2 style="color:red;">🗑 Eliminación Segura de Máquinas</h2>
+    <p>Seleccione una máquina, confirme y use la clave de seguridad.</p>
+
+    <select id="machineSelect" class="main-input">
+        <option value="">-- Seleccione una máquina --</option>
+    </select>
+
+    <br><br>
+
+    <input type="password" id="deleteKey" placeholder="Clave de seguridad" class="main-input">
+
+    <br><br>
+
+    <button class="danger-btn" onclick="confirmDelete()">🗑 Eliminar Máquina</button>
+
+    <div id="deleteMsg" style="margin-top:20px;font-weight:bold;"></div>
+
+</section>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

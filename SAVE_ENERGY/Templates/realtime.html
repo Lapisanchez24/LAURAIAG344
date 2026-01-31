@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tiempo Real - Energy AI Platform</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<nav class="main-navbar">
+  <div class="main-logo">⚡ Energy AI Platform</div>
+  <div class="main-menu">
+    <a href="/">Inicio</a>
+    <a href="/machine">Registro Máquina</a>
+    <a href="/realtime">Tiempo Real</a>
+    <a href="/graph">Gráficas</a>
+    <a href="/alerts">Alarmas</a>
+  </div>
+</nav>
+
+<section style="padding:40px; color:white;">
+
+<h2>📡 Lectura en Tiempo Real</h2>
+
+<div style="margin-bottom:20px;">
+    <input id="voltageInput" type="number" placeholder="Voltaje (V)">
+    <input id="currentInput" type="number" placeholder="Corriente (A)">
+    <button onclick="saveRealtime()">Guardar medición</button>
+</div>
+
+<h3>📈 Gráfica en Tiempo Real</h3>
+
+<canvas id="realtimeChart" width="900" height="400"></canvas>
+
+</section>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

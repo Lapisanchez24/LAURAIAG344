@@ -1,0 +1,266 @@
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0a1f44;   /* AZUL */
+    color:#ffd500;        /* AMARILLO */
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.main-navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    background:#000000;
+    border-bottom:2px solid #333;
+}
+
+.main-logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+.main-menu{
+    display:flex;
+    align-items:center;
+}
+
+.main-menu a{
+    color:#ffffff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+    font-size:16px;
+}
+
+.main-menu a:hover{
+    text-decoration:underline;
+    color:#dddddd;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    padding:80px;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:44px;
+    color:#ffd500;
+}
+
+.hero-text p{
+    margin-top:18px;
+    font-size:20px;
+    line-height:1.7;
+}
+
+/* IMAGEN PRINCIPAL */
+
+.hero-img{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-img img{
+    width:620px;
+    height:420px;
+    object-fit:cover;
+    border-radius:18px;
+    border:3px solid #ffd500;
+    box-shadow:0 0 35px rgba(255,213,0,0.4);
+}
+
+/* ============================= */
+/* GALLERY */
+/* ============================= */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+    padding:70px;
+}
+
+/* IMÁGENES GALERÍA */
+
+.gallery img{
+    width:420px;
+    height:300px;
+    object-fit:cover;
+    margin:auto;
+    border-radius:16px;
+    border:3px solid #ffd500;
+    box-shadow:0 0 25px rgba(255,213,0,0.35);
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 45px rgba(255,213,0,0.6);
+}
+
+/* ============================= */
+/* INFO PANEL */
+/* ============================= */
+
+.info-panel{
+    margin:50px 80px;
+    padding:60px;
+    background:#082567;
+    border-radius:22px;
+    border:3px solid #ffd500;
+    box-shadow:0 0 40px rgba(0,0,0,0.4);
+}
+
+.info-panel h2{
+    font-size:32px;
+    margin-bottom:18px;
+    color:#ffd500;
+}
+
+.info-panel p{
+    font-size:19px;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.features div{
+    background:#0a1f44;
+    padding:18px;
+    border-radius:12px;
+    border:2px solid #ffd500;
+    text-align:center;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.features div:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(255,213,0,0.4);
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.main-footer{
+    margin-top:60px;
+    padding:35px;
+    text-align:center;
+    background:#082567;
+    color:#ffd500;
+    border-top:3px solid #ffd500;
+    font-size:16px;
+    letter-spacing:0.5px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px){
+
+    /* NAVBAR */
+    .main-navbar{
+        flex-direction:column;
+        gap:12px;
+        padding:15px;
+        text-align:center;
+    }
+
+    .main-menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .main-menu a{
+        margin:8px 12px;
+        font-size:15px;
+    }
+
+    /* HERO */
+    .hero{
+        grid-template-columns:1fr;
+        padding:40px 20px;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:32px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+
+    .hero-img img{
+        width:95%;
+        max-width:420px;
+        height:300px;
+    }
+
+    /* GALLERY */
+    .gallery{
+        grid-template-columns:1fr;
+        padding:30px 20px;
+        gap:30px;
+    }
+
+    .gallery img{
+        width:95%;
+        max-width:380px;
+        height:280px;
+    }
+
+    /* INFO PANEL */
+    .info-panel{
+        margin:30px 15px;
+        padding:30px 20px;
+        text-align:center;
+    }
+
+    .info-panel h2{
+        font-size:26px;
+    }
+
+    .info-panel p{
+        font-size:17px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    /* FOOTER */
+    .main-footer{
+        font-size:14px;
+        padding:20px;
+    }
+}
